@@ -1,0 +1,240 @@
+body {
+  background-color: rgb(123, 136, 150);
+}
+
+
+.App-header {
+  padding: 16px 32px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  background-color: #f7e7ce;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.home-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25%;
+
+}
+.app{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  column-gap: 10%;
+  margin-top: 10px;
+  
+  
+}
+.library-background {
+  position: relative;
+  width: 550px;
+  height: 750px;
+  max-width: 750px;
+  min-width: auto;
+  background: 	#e1d2b8;
+  background-image: linear-gradient(#312229 70%, transparent 30%);
+  background-size: 10px 165px;
+  padding: 0.5rem;
+  box-shadow: 4px 3px 7px 2px #00000040;
+  margin-left: 5px;
+  border: inset 5px #a39785;
+  box-sizing: border-box;
+  overflow:hidden; 
+  overflow-y: auto;
+  
+}
+
+.library-display.book {
+  display:flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+  width: 130px;
+  height: 140px;
+  padding: 0.2rem;;
+  background:#ae9e8f;
+  box-shadow: 3px 5px 3px 4px #00000063;
+  box-sizing: border-box;
+  float:left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: #fcfcfc;
+}
+
+.home-page .formPage{
+  position: relative;
+  width: 480px;
+  height:100px;
+  margin-block-start: 50%;
+  margin-left: -7px;
+  background: #f0ce91;
+  border-radius: 7px;
+  box-shadow: 0 1px 5px rgb(138, 137, 137);
+}
+.create-book {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.create-book.display{
+  position: relative;
+  width: 480px;
+  background: #f0ce91;
+  border-radius: 7px;
+  box-shadow: 0 1px 5px rgb(138, 137, 137);
+}
+.form-page{
+  position: relative;
+  width: 480px;
+  margin-left: -7px;
+  background: #312229;
+  border-radius: 7px;
+  padding: 0.5rem;
+  box-shadow: 0 1px 5px rgb(138, 137, 137);
+}
+.book-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+.book-configs {
+  margin-top: 25px;
+  position: static;
+  width: 900px;
+  height: 900px;
+  max-height: auto;
+  background:  #ae9e8f 75%;  
+  background-image: linear-gradient(#f7e7ce 65%, transparent 80%);
+  background-size: 25px auto;
+  box-shadow: 5px 2px 7px 7px #00000040;
+  padding: 20px 25px 10px;
+  box-sizing: border-box;
+}
+.title-pages {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.page-display {
+  height:85%;
+  padding-inline: 3%;
+  border: rgba(105, 105, 105, 0.616);
+  background-color: #fcfcfcd2;
+  border-style:inset;
+  border-radius: 10px;
+  text-align: justify;
+  font-size: large;
+  overflow:hidden;
+  overflow-y:auto;
+  color: rgb(41, 46, 46);
+  
+}
+Form input{
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.26);
+    padding: 0.5rem;
+    border: groove 3px #d5c5ae;
+    font-family: "Architects Daughter", cursive;
+    font-size: 1rem;
+    color: hsla(0, 0%, 0%, 0.301);
+    width: 70%;
+    margin-bottom: 20px;
+    margin-block-start: 5px;
+  }
+Form textarea {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.26);
+  font-family: "Architects Daughter", cursive;
+  font-size: 1rem;
+  color:whitesmoke;
+  border: groove 3px #d5c5ae;
+  padding: 0.5rem;
+  outline: none;
+  resize: vertical;
+}  
+button.user-button {
+    padding: 0.3rem;
+    width: 100%;
+    border:transparent;
+    font-family: "Architects Daughter", cursive;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: solid 2px #726651 ;
+    border-radius: 7px;
+    background-color: #d5c5ae;
+    justify-content: center;
+    align-items: center;
+  }
+button.create-button {
+  padding: 0.3rem;
+  width: 100%;
+  border:transparent;
+  font-family: "Architects Daughter", cursive;
+  text-decoration: none;
+  border: double 2px #312229e1 ;
+  background-color: #d5c5ae;
+  justify-content: center;
+  align-items: center;
+}
+
+button:hover{
+  background-color: #534d43;
+  color:whitesmoke;
+}
+
+button.recolher {
+  width: 100%;
+  font-family: "Architects Daughter", cursive;
+  border-left: inset 3px #312229 ;
+  border-right: inset 3px #00000071 ;
+  border-top: inset 1px #312229 ;
+  border-bottom: inset 3px #31222980 ;
+  color:lightgrey;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-color: transparent;
+  margin-bottom: 10px;
+} 
+button.book-button {
+  padding: 0.3rem;
+  height: fit-content;
+  width: auto;
+  border:transparent;
+  font-family: "Architects Daughter", cursive;
+  border-radius: 7px;
+  border: outset 2px rgba(112, 128, 144, 0.438);
+  background-color: #d5c5ae;
+  justify-content: center;
+  align-items: center;
+}
+button.page-button {
+    object-position: bottom;
+    height: auto;
+    padding: 0.5rem;
+    width: 50%;
+    font-family: "Architects Daughter", cursive;
+    margin-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border: groove 2px #3122298c ;
+    border-bottom: inset 2px #000000 ;
+    background-color: #d5c5ae;  
+  }
+
+
+.App-link {
+  color: #61dafb;
+}
